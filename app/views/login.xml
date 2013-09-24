@@ -1,0 +1,10 @@
+<Alloy>
+	<Window>
+	<View class="container">
+		<Label id="header">Login to Corndog Tour.</Label>
+		<TextField id="username"  width="250" hintText="Username" ></TextField>
+		<TextField id="password"  width="250" hintText="Password" passwordMask="true" ></TextField>
+		<Button id="loginButton" onClick="login">Login</Button>
+	</View>
+	</Window>
+</Alloy>
