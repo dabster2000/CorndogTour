@@ -1,6 +1,16 @@
 function Controller() {
     function login() {
-        alert("Yes");
+        var user = Alloy.createModel("user", {
+            _id: "hans"
+        });
+        user.fetch({
+            success: function() {
+                alert("User password " + res.password);
+            },
+            error: function() {
+                alert("error");
+            }
+        });
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "login";

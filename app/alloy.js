@@ -10,5 +10,4 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
-Alloy.Models.user = Alloy.createModel('user');
-Alloy.Models.user.fetch();
+
