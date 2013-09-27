@@ -1,0 +1,11 @@
+<Alloy>
+	<NavigationWindow backgroundColor="#323a45">
+		<Window backgroundColor="#eaedf1" title="Login">
+	        <View layout="vertical">
+				<TextField id="username" backgroundImage="textfield-username.png" width="280" height="52" hintText="Username" bottom="1" autocorrect="false" autocapitalization="false" paddingLeft="50"></TextField>
+				<TextField id="password" backgroundImage="textfield-password.png" width="280" height="52" hintText="Password" passwordMask="true" top="1" paddingLeft="50"></TextField>
+				<Button id="loginButton" backgroundImage="button-large.png" width="280" height="50" onClick="login">Login</Button>
+			</View>
+		</Window>
+    </NavigationWindow>
+</Alloy>

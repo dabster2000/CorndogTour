@@ -9,6 +9,9 @@ function Controller() {
             modal: true
         });
     }
+    function login_onClick() {
+        Alloy.createController("login").getView().open({});
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "index";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
@@ -34,7 +37,7 @@ function Controller() {
         },
         top: 10,
         height: "auto",
-        text: "Condog Tour",
+        text: "Condog Tour iPhone",
         id: "header"
     });
     $.__views.index.add($.__views.header);
@@ -56,11 +59,18 @@ function Controller() {
     });
     $.__views.index.add($.__views.teamListButton);
     teamList_onClick ? $.__views.teamListButton.addEventListener("click", teamList_onClick) : __defers["$.__views.teamListButton!click!teamList_onClick"] = true;
+    $.__views.loginButton = Ti.UI.createButton({
+        title: "Login",
+        id: "loginButton"
+    });
+    $.__views.index.add($.__views.loginButton);
+    login_onClick ? $.__views.loginButton.addEventListener("click", login_onClick) : __defers["$.__views.loginButton!click!login_onClick"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.index.open();
     __defers["$.__views.myTeamButton!click!myTeam_onClick"] && $.__views.myTeamButton.addEventListener("click", myTeam_onClick);
     __defers["$.__views.teamListButton!click!teamList_onClick"] && $.__views.teamListButton.addEventListener("click", teamList_onClick);
+    __defers["$.__views.loginButton!click!login_onClick"] && $.__views.loginButton.addEventListener("click", login_onClick);
     _.extend($, exports);
 }
 

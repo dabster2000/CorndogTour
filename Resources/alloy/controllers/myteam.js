@@ -12,14 +12,14 @@ function Controller() {
         id: "myteam"
     });
     $.__views.myteam && $.addTopLevelView($.__views.myteam);
-    $.__views.__alloyId2 = Ti.UI.createView({
+    $.__views.__alloyId3 = Ti.UI.createView({
         backgroundColor: "#79ad3b",
         layout: "vertical",
         title: "My Corndog Teams",
-        id: "__alloyId2"
+        id: "__alloyId3"
     });
-    $.__views.myteam.add($.__views.__alloyId2);
-    $.__views.__alloyId3 = Ti.UI.createLabel({
+    $.__views.myteam.add($.__views.__alloyId3);
+    $.__views.__alloyId4 = Ti.UI.createLabel({
         color: "white",
         textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
         backgroundColor: "transparent",
@@ -30,9 +30,9 @@ function Controller() {
             fontWeight: "normal"
         },
         text: "My Team Name",
-        id: "__alloyId3"
+        id: "__alloyId4"
     });
-    $.__views.__alloyId2.add($.__views.__alloyId3);
+    $.__views.__alloyId3.add($.__views.__alloyId4);
     $.__views.teamname = Ti.UI.createLabel({
         color: "white",
         textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
@@ -45,8 +45,8 @@ function Controller() {
         },
         id: "teamname"
     });
-    $.__views.__alloyId2.add($.__views.teamname);
-    $.__views.__alloyId4 = Ti.UI.createLabel({
+    $.__views.__alloyId3.add($.__views.teamname);
+    $.__views.__alloyId5 = Ti.UI.createLabel({
         color: "white",
         textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
         backgroundColor: "transparent",
@@ -57,9 +57,9 @@ function Controller() {
             fontWeight: "normal"
         },
         text: "My User Name",
-        id: "__alloyId4"
+        id: "__alloyId5"
     });
-    $.__views.__alloyId2.add($.__views.__alloyId4);
+    $.__views.__alloyId3.add($.__views.__alloyId5);
     $.__views.username = Ti.UI.createLabel({
         color: "white",
         textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
@@ -72,7 +72,7 @@ function Controller() {
         },
         id: "username"
     });
-    $.__views.__alloyId2.add($.__views.username);
+    $.__views.__alloyId3.add($.__views.username);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var persistence = require("persistence");

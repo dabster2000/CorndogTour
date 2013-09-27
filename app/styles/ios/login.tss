@@ -1,0 +1,25 @@
+
+"#header":{
+	top: 10,
+	textAlign: 'center',
+	height: 'auto',
+	font:{
+		fontSize: 28,
+		fontweight: 'bold'
+	}
+},
+"#username":{
+	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE
+	
+	
+},
+"#password":{
+	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
+	returnKeyType: Ti.UI.RETURNKEY_DONE
+	
+},
+"#loginButton":{
+	
+}

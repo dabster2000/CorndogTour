@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container">
+		<Label id="header">Condog Tour iPhone</Label>
+		<Button id="myTeamButton" onClick="myTeam_onClick">My Team</Button>
+		<Button id="teamListButton" onClick="teamList_onClick">CT Team List</Button>
+		<Button id="loginButton" onClick="login_onClick">Login</Button>
+	</Window>
+</Alloy>

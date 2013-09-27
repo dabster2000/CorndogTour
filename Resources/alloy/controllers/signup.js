@@ -13,10 +13,10 @@ function Controller() {
         id: "signup"
     });
     $.__views.signup && $.addTopLevelView($.__views.signup);
-    $.__views.__alloyId5 = Ti.UI.createView({
-        id: "__alloyId5"
+    $.__views.__alloyId6 = Ti.UI.createView({
+        id: "__alloyId6"
     });
-    $.__views.signup.add($.__views.__alloyId5);
+    $.__views.signup.add($.__views.__alloyId6);
     $.__views.header = Ti.UI.createLabel({
         color: "white",
         textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
@@ -30,25 +30,25 @@ function Controller() {
         text: "Sign to Corndog Tour.",
         id: "header"
     });
-    $.__views.__alloyId5.add($.__views.header);
+    $.__views.__alloyId6.add($.__views.header);
     $.__views.username = Ti.UI.createTextField({
         id: "username",
         width: "250",
         hintText: "Username"
     });
-    $.__views.__alloyId5.add($.__views.username);
+    $.__views.__alloyId6.add($.__views.username);
     $.__views.password = Ti.UI.createTextField({
         id: "password",
         width: "250",
         hintText: "Password",
         passwordMask: "true"
     });
-    $.__views.__alloyId5.add($.__views.password);
+    $.__views.__alloyId6.add($.__views.password);
     $.__views.loginButton = Ti.UI.createButton({
         title: "Login",
         id: "loginButton"
     });
-    $.__views.__alloyId5.add($.__views.loginButton);
+    $.__views.__alloyId6.add($.__views.loginButton);
     login ? $.__views.loginButton.addEventListener("click", login) : __defers["$.__views.loginButton!click!login"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);

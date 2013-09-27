@@ -12,13 +12,13 @@ function Controller() {
         id: "teams"
     });
     $.__views.teams && $.addTopLevelView($.__views.teams);
-    $.__views.__alloyId6 = Ti.UI.createView({
+    $.__views.__alloyId7 = Ti.UI.createView({
         backgroundColor: "#79ad3b",
         layout: "vertical",
         title: "Corndog Teams",
-        id: "__alloyId6"
+        id: "__alloyId7"
     });
-    $.__views.teams.add($.__views.__alloyId6);
+    $.__views.teams.add($.__views.__alloyId7);
     $.__views.row = Ti.UI.createTableViewRow({
         color: "white",
         font: {
@@ -29,8 +29,8 @@ function Controller() {
         },
         id: "row"
     });
-    var __alloyId7 = [];
-    __alloyId7.push($.__views.row);
+    var __alloyId8 = [];
+    __alloyId8.push($.__views.row);
     $.__views.teamname = Ti.UI.createLabel({
         color: "white",
         textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
@@ -52,11 +52,11 @@ function Controller() {
             fontStyle: "normal",
             fontWeight: "normal"
         },
-        data: __alloyId7,
+        data: __alloyId8,
         id: "table",
         headerTitle: "Teams"
     });
-    $.__views.__alloyId6.add($.__views.table);
+    $.__views.__alloyId7.add($.__views.table);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var xhr_teamslist = Ti.Network.createHTTPClient();
