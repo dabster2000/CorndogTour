@@ -1,20 +1,55 @@
+var USERNAME = "user", PASSWORD = "password", AUTHKEY = "somelongauthkeyforvalidation";
+
 exports.definition = {
     config: {
+        columns: {
+            username: "text primary key",
+            password: "text",
+            teamname: "text",
+            bikers: "text",
+            loggedIn: "integer",
+            loggedInSince: "text",
+            authKey: "text"
+        },
         adapter: {
-            type: "rest",
             collection_name: "user",
-            base_url: "http://corndogtourengine.cfapps.io/user/"
+            idAttribute: "username"
         }
     },
     extendModel: function(Model) {
         _.extend(Model.prototype, {
-            idAttribute: "_id"
+            login: function() {
+                var user_rest = Alloy.createModel("user_rest", {
+                    _id: "hans"
+                });
+                user_rest.fetch({
+                    success: function() {
+                        this.set({
+                            loggedIn: 1,
+                            loggedInSince: moment().format("YYYY-MM-DD HH:mm:ss.SSS"),
+                            authKey: AUTHKEY,
+                            teamname: res.teamname
+                        });
+                        return true;
+                    },
+                    error: function() {
+                        alert("error");
+                        return false;
+                    }
+                });
+            },
+            logout: function() {
+                this.set({
+                    loggedIn: 0,
+                    loggedInSince: "",
+                    authKey: ""
+                });
+            },
+            validateAuth: function() {
+                return 1 === this.get("loggedIn") && this.get("authKey") === AUTHKEY ? true : false;
+            }
         });
         return Model;
-    },
-    extendCollection: function(Collection) {
-        _.extend(Collection.prototype, {});
-        return Collection;
     }
 };
 

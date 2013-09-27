@@ -1,5 +1,7 @@
 <Alloy>
-	<Window >
-		<Label>This is index view</Label>
+	<Window class="container">
+		<Label id="header">Condog Tour</Label>
+		<Button id="myTeamButton" onClick="myTeam_onClick">My Team</Button>
+		<Button id="teamListButton" onClick="teamList_onClick">CT Team List</Button>
 	</Window>
 </Alloy>

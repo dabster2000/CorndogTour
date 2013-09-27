@@ -1,0 +1,33 @@
+"Window":{
+    backgroundColor: 'white',
+    layout: 'vertical'
+}
+"Label":{
+    color: 'white',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    backgroundColor: 'transparent',
+    font: {
+        fontFamily:'Helvetica',
+        fontSize: '24dp',
+        fontStyle: 'normal',
+        fontWeight: 'normal'
+    }	
+}
+"TableView":{
+	color: 'white',
+	font: {
+        fontFamily:'Helvetica',
+        fontSize: '24dp',
+        fontStyle: 'normal',
+        fontWeight: 'normal'
+    }
+}
+"TableViewRow":{
+	color: 'white',
+	font: {
+        fontFamily:'Helvetica',
+        fontSize: '24dp',
+        fontStyle: 'normal',
+        fontWeight: 'normal'
+    }
+}

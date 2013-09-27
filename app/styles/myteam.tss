@@ -1,0 +1,5 @@
+".container" : {
+	backgroundColor:"#79ad3b",
+	layout: 'vertical',
+	title: 'My Corndog Teams'  
+}

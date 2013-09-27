@@ -10,4 +10,8 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
+var persistence = require('persistence');
+persistence.setUsername('hans');
+persistence.setPassword('1234');
+
 

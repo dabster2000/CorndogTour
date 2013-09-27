@@ -1,0 +1,10 @@
+<Alloy>
+	<Window>
+		<View class="container">
+			<Label>My Team Name</Label>
+			<Label id="teamname"></Label>
+			<Label>My User Name</Label>
+			<Label id="username"></Label>
+		</View>
+	</Window>
+</Alloy>

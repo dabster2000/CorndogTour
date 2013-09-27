@@ -49,56 +49,11 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0012,
+    priority: 10000.0022,
     key: "container",
     style: {
         backgroundColor: "#79ad3b",
         layout: "vertical",
-        title: "Corndog Login"
-    }
-}, {
-    isId: true,
-    priority: 100000.0013,
-    key: "header",
-    style: {
-        top: 10,
-        textAlign: "center",
-        height: "auto",
-        font: {
-            fontSize: 28,
-            fontweight: "bold"
-        }
-    }
-}, {
-    isId: true,
-    priority: 100000.0014,
-    key: "username",
-    style: {
-        top: 10,
-        width: 200,
-        height: "auto",
-        keyboardType: Ti.UI.KEYBOARD_DEFAULT,
-        borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
-    }
-}, {
-    isId: true,
-    priority: 100000.0015,
-    key: "password",
-    style: {
-        top: 10,
-        width: 200,
-        height: "auto",
-        keyboardType: Ti.UI.KEYBOARD_DEFAULT,
-        borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
-        returnKeyType: Ti.UI.RETURNKEY_DONE
-    }
-}, {
-    isId: true,
-    priority: 100000.0016,
-    key: "loginButton",
-    style: {
-        top: 10,
-        width: 200,
-        height: "auto"
+        title: "Corndog Teams"
     }
 } ];
